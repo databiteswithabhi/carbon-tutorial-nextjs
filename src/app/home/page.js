@@ -14,6 +14,7 @@ import {
   Column,
   CodeSnippet,
 } from '@carbon/react';
+import { ArrowRight, Add, TrashCan } from '@carbon/react/icons';
 
 import Image from 'next/image';
 
@@ -29,7 +30,7 @@ export default function LandingPage() {
           </BreadcrumbItem>
         </Breadcrumb>
         <h1 className="landing-page__heading">
-          Data, Analytics, &amp; Innovation: Welcome to DB2 Hub
+        DB2 Data Hub: Analytics, Insights, &amp; Innovation
         </h1>
         {/*  <CodeSnippet type="single" feedback="Copied to clipboard">
     yarn add carbon-components@latest carbon-components-react@latest
@@ -52,7 +53,7 @@ export default function LandingPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h3 className="landing-page__subheading">What is Carbon?</h3>
+                  <h3 className="landing-page__subheading">About DB2 Hub</h3>
                   <p className="landing-page__p">
                     DB2Hub is a portal providing the latest updates on IBM DB2,
                     ETL pipelines, Watson, and cloud services like AWS, GCP, and
@@ -62,7 +63,7 @@ export default function LandingPage() {
                     direct affiliation with IBM offerings. For broader tech
                     insights, visit Data Bites.
                   </p>
-                  <Button href="https://databites.dev/">Data Bites</Button>
+                  <Button href="https://databites.dev/" renderIcon={ArrowRight} iconDescription="ArrowRight" tooltipAlignment="start">Data Bites</Button>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                   <Image
